@@ -1,0 +1,112 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(37, 34, 34);
+}
+.container{
+    max-width: 450px;
+    margin: auto;
+    background-color: white;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+.content{
+    width: 90%;
+    margin: auto;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    
+}
+.row input{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    padding-left: 5px;
+}
+#form{
+    height: 165px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+.row{
+    display: flex;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #555;
+
+}
+.dollar, .percent{
+    background-color: rgb(202, 197, 197);
+    width: 50px;
+    height: 30px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: center;
+    padding-top: 5px;
+}
+#calculate-btn{
+    background-color:rgb(34, 31, 31);
+    color: white;
+    border-radius: 5px;
+}
+.loading{
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 30px;
+    display: none;
+}
+.monthly-payment, .total-payment, .total-interest{
+    background-color: rgb(202, 197, 197);
+    width: 180px;
+    height: 30px;
+    align-items:center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.result-flex{
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    height: 210px;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+h3{
+    text-align: center;
+    color: #555;
+}
+input[type = "text"]:focus{
+    border: none;
+    outline: none;
+    border: 2px solid rgba(36, 36, 236, 0.6);
+}
+.flex-grow{
+    display: flex;
+    flex-direction: column;
+}
+.error{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(240, 87, 113, 0.3);
+    color: rgb(240, 87, 113);
+    border-radius: 8px;
+    margin-top: 5px;
+}

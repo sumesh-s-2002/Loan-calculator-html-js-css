@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loan calculator</title>
+    <link rel="stylesheet" href="loan.css">
+</head>
+<body>
+    <div class="container flex-grow">
+        <div class="content flex">
+            <h1>Loan Calculator</h1>
+            <div id="form">
+                <div class="row">
+                    <span class = "dollar" >$</span>
+                    <input type="text" id="amount" autocomplete = "off" placeholder= "Loan Amount"> 
+                </div>
+                <div class="row">
+                    <span class = "percent" >%</span>
+                    <input type="text" id="interest" autocomplete="off" placeholder = "Interest">
+                </div>
+                <div class="row">
+                    <input type="text" id="years" autocomplete= "off" placeholder="Years to Repay">
+                </div>
+                <div class="row">
+                    <input type="submit" id="calculate-btn" value="Claculate">
+                </div>
+            </div>
+            <!--------loading--------->
+            <div class="loading">
+                <img src="Filled fading balls.gif">
+            </div>
+            <!-----results----->
+            <div class="result-flex">
+                <h3>Results</h3>
+                <div class="row">
+                    <span class = "monthly-payment" >Monthly Payment</span>
+                    <input type="text" autocomplete = "off" id="monthly-pay" placeholder= "Loan Amount"> 
+                </div>
+                <div class="row">
+                    <span class = "total-payment" >Total Payment</span>
+                    <input type="text" autocomplete = "off" id="total-pay" placeholder = "Interest">
+                </div>
+                <div class="row">
+                    <span class = "total-interest" >Total Interest</span>
+                    <input type="text" autocomplete = "off" id="total-inter" placeholder="Years to Repay">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="loan.js"></script>
+</body>
+</html>
